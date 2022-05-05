@@ -19,7 +19,7 @@
 
 ### Screenshot : 
 
-![Screenshot](/screenshots/home.jpg?raw=true "View Of Page")
+![Screenshot](/screenshots/home.png?raw=true "View Of Page")
 
 ### Links
 
