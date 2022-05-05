@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-column {
+  background-image: url(../img/ribs.jpg);
+  background-color: #404040;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 2em 1em 2em;
+  background-blend-mode: multiply;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.heading-text {
+  color: #fff;
+  font-weight: 300;
+  font-size: 2.25rem;
+  order: 1;
+  margin: 2em 0;
+}
+
+.sub-heading-text {
+  color: #f18119;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.313rem;
+  order: 2;
+}
+
+.top-text {
+  color: #f18119;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+  order: 0;
+  margin: 0;
+  padding-top: 0.5em;
+  border-top: 5px solid #f18119;
+  width: 40%;
+  align-self: center;
+  border-image: linear-gradient(to right, #FFA51D,#FF713B) 1;
+}
+
+/* second column */
+
+.form-column {
+  padding: 0 1.25em;
+}
+
+.form-header-text {
+  font-size: 1.313rem;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+.form-sub-header-text {
+  color: #f18119;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+
+/* form elements */
+
+.form-elements-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  /* border: 2px solid magenta; */
+}
+
+.input {
+  font-family: inherit;
+  padding: 0.5em;
+  border: 1px solid #c3c1c1;
+  border-radius: 5px;
+  margin: 0 0 1em 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.input:focus{
+  transform: scale(1.1);
+}
+
+.register-button {
+  padding: 1.2em;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.625rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transform: scale(1);
+  transition: color,transform 250ms;
+}
+
+.register-button:hover,
+.register-button:focus{
+  color: #404040;
+  transform: scale(1.1);
+}
+
+.btn-gradient{
+  background: linear-gradient(270deg,#FFA51D,#FF713B);
+}
+
+.form-terms-and-condition-paragraph {
+  font-size: 0.625rem;
+  margin: 1em 0 3em 0;
+}
+
+/* Media Queries */
+
+@media (min-width: 480px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .banner-column {
+    width: 60%;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+
+  .form-column {
+    width: 40%;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  /* Typography */
+
+  .heading-text {
+    font-size: 3.375rem;
+    margin: 0;
+  }
+
+  .sub-heading-text {
+    font-size: 1.75rem;
+  }
+
+  .form-header-text {
+    font-size: 1.75rem;
+  }
+
+}
